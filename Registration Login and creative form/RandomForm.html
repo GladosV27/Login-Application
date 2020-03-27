@@ -1,0 +1,572 @@
+<html>
+<head>
+<style>
+        
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-image: url(Pictures/Sea.jpg);
+  background-size: cover;
+  
+}
+
+#login-box {
+  position: relative;
+  margin: 20% auto;
+  width: 900px;
+  height: 800px;
+  
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 450px;
+  height: 800px;
+  background-color: white;
+}
+
+
+        
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+  
+}
+
+    
+.mail {
+  margin: 10px  0px; 
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px white solid;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  transition: padding 1s ease;
+  background-color: transparent;
+  color: white;
+}
+    right label {
+        color: white;
+    }
+    
+
+.left input[type="text"] {
+
+  margin: 10px  0px; 
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px blue solid;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  transition: padding 1s ease;
+  
+}
+    input[type="radio"] {
+        width: 60px;
+        
+    }    
+        
+.BIC{
+  margin: 10px  0px; 
+  padding: 4px;
+  width: 60px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px blue solid;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  transition: padding 1s ease;
+  
+} 
+    
+.KartNum{
+  margin: 10px  0px; 
+  padding: 4px;
+  width: 200px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px blue solid;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  transition: padding 1s ease;
+  
+} 
+     
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+     
+input[type="text" ]:focus {
+ border-bottom: 0 solid transparent;
+ padding: 0 0 20 20 ;
+ outline: none;
+}
+ 
+ 
+label {
+    font-size: 13;
+}
+  
+
+ 
+.right input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  
+  border: solid 2px #1ac6ff;
+  border-radius: 8px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14;
+  text-transform: inherit;
+  cursor: pointer;
+  transition:  all 0.6s ease-out;
+  background-color: #1ac6ff; 
+  
+}
+
+.right input[type="submit"]:hover {
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  color: white;
+ 
+    
+}    
+    
+    
+    
+    
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #1ac6ff;
+  border: solid 2px #1ac6ff;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14;
+  text-transform: inherit;
+  cursor: pointer;
+  transition:  all 0.6s ease-out;
+  
+  
+}
+
+input[type="submit"]:hover {
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: transparent; 
+  color: black;
+ 
+    
+}
+
+        
+        
+
+.confirm {
+position: absolute;
+left: 87%;
+top:62%;
+        
+}        
+      
+
+
+.oder {
+
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 43px;
+  height: 43px;
+  text-align: center;
+}
+  
+      
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 450px;
+  height: 800px;
+  background-color: rgba(0,0,0,0.74);
+  
+  border-radius: 0 2px 2px 0;
+}
+
+.right .title2 {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FFFFFF;
+    transition: all 2s ease;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    max-height: 360px;
+    max-width: 400px;
+    
+}    
+
+    
+textarea:focus {
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+  
+    }
+    
+.header {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    }    
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+li {
+  float: left;
+ 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding: 30px;
+  transition:  all 0.6s ease-out;
+}
+
+li a:hover:not(.active) {
+  background-color: #FFFFFF;
+  color: black;
+  
+}
+
+.active {
+  background-color: #1ac6ff;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #1ac6ff;
+  cursor: pointer;
+  border-radius: 15px;
+} 
+    
+    
+.slider::-moz-slider-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #1ac6ff;
+  cursor: pointer;
+  border-radius: 15px;
+}
+    
+.slider::-o-slider-thumb {
+  -o-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #1ac6ff;
+  cursor: pointer;
+  border-radius: 15px;
+} 
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+   
+
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+    font-weight:normal;
+    border-radius: 5px;
+}
+
+
+
+body {
+  padding: 3rem;
+} 
+
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+    <ul>
+        <li><a class="active" href="RohBau.html">Home</a></li>
+        <li><a href="Registrierung2.html">Registration</a></li>
+        <li><a href="Login2.html">Login</a></li>
+        <li style="float:right"><a>Money:&nbsp;<span id="geldWrapper">999999999</span>&nbsp;€</a></li>
+    </ul>
+</div>
+
+<div id="login-Box" >
+  <div class="left">
+    <h1>Money payer</h1>
+    
+    <form method="post" >
+        
+        <input type="range" min="1" max="9999999" value="1" class="slider" id="range">
+        <p>Money: <span id="number-val"></span>&nbsp;€</p>
+        
+        <input type="text"  name="NameTxt" placeholder="First name" /><br>
+        <label>First name:</label><br><br>
+        <input type="text" id="lastName" name="LstName"placeholder="Last name" /><br>
+        <label>Last name:</label><br><br>
+        <input type="text" name="adress" placeholder="Adress" /><br>
+        <label >Adress:</label><br><br>
+        <input type="text" name="Age"placeholder="Age" /><br>
+        <label>Age:</label><br><br>
+        
+        <div style="float: left;margin-right: 20px;text-align: center">
+            <input type="radio"  name="Gender" /><br><label>Man</label>
+        </div>
+        
+        <div style="float: left;margin-right: 20px;text-align: center">
+            <input type="radio"  name="Gender" /><br><label>Woman</label>
+        </div>
+        
+        <div style="float: left;text-align: center">
+            <input type="radio"  name="Gender" /><br><label>Diverse</label>
+        </div><br><br>
+ 
+        
+        
+        <input class="BIC" type="number"  name="Bic4"placeholder="XXXX" />
+        <label>-</label>        
+        <input class="BIC"type="number"  name="Bic2" placeholder="XX" />
+        <label>-</label>
+        <input class="BIC"type="number" name="BiC2" placeholder="XX" /><label>-</label>
+        <input class="BIC"type="number" name="Bic3"  placeholder="XXX" /><br><br>
+        <input class="KartNum" type="number" name="CardNum" placeholder="0000000000000000" /><br>
+        <label>Cardnumber</label>
+
+    </form>
+
+    <input onclick="checkInput()" type="submit" id="submit"  name="signup_submit" value="Send" />
+    
+    </div>
+  
+  <div class="right">
+      <h1 style="text-align: center; color:  white">Contact</h1>  
+      <form name="myForm">
+          <div class="select-wrapper">
+              <select class="select-css" >
+                <option>Do you have any problems ?</option>
+                <option>Sign in </option>
+                <option>With paying money</option>
+                <option>Registration</option>
+                <option>Further</option>
+              </select>
+          </div>
+         
+          <input type="text" class="mail" name="mail" placeholder="max-mustermann.@mail.com" ><br>
+          <label style="color: white">E-Mail:</label><br><br><br>
+          <input type="mail" class="mail" name="ContactName" placeholder="Max Mustermann" ><br>
+          <label style="color: white">First and Lastname:</label><br><br>
+          
+          
+          <textarea style="color: white"rows="4" cols="50" placeholder="Further Problems..."></textarea><br>
+          
+          <input  type="submit" id="submit"  name="signup_submit" value="Send" />
+                  
+     
+      </form>
+  </div>
+          
+            
+  </div>  
+  
+
+    
+<script>
+var secUre = 0;
+var slider = document.getElementById("range");
+var y = document.getElementById("number-val");
+
+    
+y.innerHTML = slider.value;
+
+slider.oninput = function() {
+  y.innerHTML = this.value;
+}
+
+function checkInput ()  {
+var geld = document.getElementById("number-val");
+var strFehler='';
+var x = document.getElementById("geldWrapper");
+var mon = 999999999; 
+    
+if (document.forms[0].NameTxt.value==""){ 
+
+  strFehler += "\nFeld First name is empty";}
+
+if (document.forms[0].LstName.value=="" ){ 
+
+  strFehler += "\nFeld Last name is empty";}
+    
+if (document.forms[0].Age.value <18){ 
+
+  strFehler += "\nToo young";}
+    
+    
+if (document.forms[0].adress.value==""){ 
+
+  strFehler += "\nAdress field is empty";}
+
+if (document.forms[0].Bic4.value.length<4){ 
+
+  strFehler += "\nField Bic4 is wrong";}
+    
+if (document.forms[0].Bic2.value.length<2 || document.forms[0].BiC2.value.length<2){ 
+
+  strFehler += "\nField Bic2 is Falsch";}
+    
+if (document.forms[0].Bic3.value.length<3){ 
+
+  strFehler += "\nField Bic3 is Falsch";}
+
+if (document.forms[0].CardNum.value.length<16){ 
+
+  strFehler += "\nField Cardnumber is wrong";}    
+    
+if (strFehler.length>0) {
+
+  alert("Identified problems: "+strFehler); 
+  
+ } 
+else {
+  secUre = 1;
+}
+if (secUre == 1 ){
+    x.innerHTML = (x.innerHTML - y.innerHTML);
+    
+    alert (y.innerHTML +"€ were deducted" );
+    
+}
+if (x.innerHTML <= 0)
+    alert ("You have no money");
+    slider.disable;
+
+}
+
+
+    
+
+</script>  
+</body>
+</html>
